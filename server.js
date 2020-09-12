@@ -18,5 +18,5 @@ app.get('/pagar', (_, res) => {
       res.status(500).json(err);
     })
 })
-
-app.listen(3001);
+const port = process.env.PORT || 3001;
+app.listen(port);
